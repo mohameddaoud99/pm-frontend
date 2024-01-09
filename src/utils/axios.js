@@ -3,7 +3,7 @@ import axios from "axios";
 axios.defaults.withCredentials = true;
 
 export const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://products-management-back.vercel.app",
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
@@ -11,7 +11,7 @@ export const axiosInstance = axios.create({
 });
 
 export const axiosPrivateInstance = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://products-management-back.vercel.app",
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
